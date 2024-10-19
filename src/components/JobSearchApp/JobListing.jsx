@@ -12,7 +12,7 @@ const JobListing = () => {
   useEffect(() => {
     dispatch(FetchJobs());
   }, []);
-  console.log(filteredJobs, "Jobs");
+  // console.log(filteredJobs, "Jobs");
   if (isLoading) {
     return <Loader />;
   }

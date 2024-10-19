@@ -22,7 +22,7 @@ export const JobsSlice = createSlice({
     filter: (state, action) => {
       const { value } = action.payload;
 
-      console.log(value, "searhc");
+      //  console.log(value, "searhc");
 
       // Toggle filter value
       if (state.filterCriteria.includes(value)) {
@@ -45,7 +45,7 @@ export const JobsSlice = createSlice({
     searchFilter: (state, action) => {
       const { value } = action.payload;
 
-      console.log(value, "searhc");
+      // console.log(value, "searhc");
 
       if (value.trim() !== "") {
         state.filteredJobs = state.data.filter((job) =>
@@ -73,7 +73,7 @@ export const JobsSlice = createSlice({
 
     filterJobLocation: (state, action) => {
       const { value } = action.payload;
-      console.log(value, "from job loc");
+      // console.log(value, "from job loc");
 
       if (value.trim() !== "") {
         state.filteredJobs = state.data.filter((job) =>

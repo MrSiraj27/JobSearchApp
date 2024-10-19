@@ -34,7 +34,7 @@ export const whishlit_slice = createSlice({
         state.count++;
       }
 
-      console.log([...state.favourites], "fav");
+      //console.log([...state.favourites], "fav");
 
       localStorage.setItem("count", state.count);
       localStorage.setItem("Wish_List", JSON.stringify(state.favourites));

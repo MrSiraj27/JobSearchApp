@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 const WishList = () => {
   const favs = useSelector((state) => state.WisList.favourites);
-  console.log(favs);
+  //console.log(favs);
 
   const bgColors = [
     "#f3eaff", // Lavender Light
